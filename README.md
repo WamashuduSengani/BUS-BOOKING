@@ -1,6 +1,6 @@
 # bus-booking
 
-A bus booking system
+A bus booking system built with Javascript, CSS and HTML
 
 #How to run
 1. cd into the bus-booking repo.
