@@ -1,0 +1,111 @@
+.booking_container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: var(--font_size);
+}
+.booking_container .alert {
+  --alert_radius: 15px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  height: max(2rem, 4.6vh);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 var(--alert_radius) var(--alert_radius);
+}
+.booking_container h1 {
+  width: 80%;
+  text-align: center;
+  margin: 1rem;
+}
+.booking_container .booking_selection_wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 100%;
+  min-height: max(20rem, 50vh);
+}
+.booking_container .booking_selection_wrapper .trip_type {
+  display: flex;
+  justify-content: center;
+  min-height: max(3rem, 7.5vh);
+}
+.booking_container .booking_selection_wrapper .trip_type button {
+  min-width: max(8rem, 9.6vw);
+  margin: 0 max(1rem, 1.1vw) 0 max(1rem, 1.1vw);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: white;
+  cursor: pointer;
+  font-size: var(--font_size);
+}
+.booking_container .booking_selection_wrapper form {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: max(1rem, 2.5vh);
+  --booking_form_items_width: max(22.5rem, 45%);
+  --booking_form_items_height: max(3rem, calc(3vw * 1.1));
+  --booking_form_items_margin: max(0.5rem, 1vh) 0 max(0.5rem, 1vh) 0;
+  --booking_form_items_borderRadius: max(1rem, calc(1vw * 1.1));
+  --booking_form_items_padding: 0 max(0.5rem, calc(0.5vw * 1.1)) 0 0;
+}
+.booking_container .booking_selection_wrapper form .input_wrapper {
+  min-width: var(--booking_form_items_width);
+  min-height: var(--booking_form_items_height);
+  margin: var(--booking_form_items_margin);
+  border: 2px solid black;
+  border-radius: var(--booking_form_items_borderRadius);
+  display: flex;
+  align-items: center;
+}
+.booking_container .booking_selection_wrapper form .input_wrapper svg {
+  min-width: max(2rem, 2.25vw);
+  min-height: max(2rem, 5.5vh);
+  margin: max(0.5rem, 1.375vh) max(0.5rem, 0.5vw) max(0.5rem, 1.375vh) max(0.5rem, 0.5vw);
+  color: var(--primary);
+}
+.booking_container .booking_selection_wrapper form .input_wrapper select {
+  flex: 1;
+  min-height: inherit;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: var(--booking_form_items_borderRadius);
+  padding: var(--booking_form_items_padding);
+  background-color: transparent;
+  font-size: var(--font_size);
+}
+.booking_container .booking_selection_wrapper form .input_wrapper input {
+  flex: 1;
+  min-height: inherit;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: var(--booking_form_items_borderRadius);
+  padding: var(--booking_form_items_padding);
+  background-color: transparent;
+  font-size: var(--font_size);
+}
+.booking_container .booking_selection_wrapper form button {
+  min-width: var(--booking_form_items_width);
+  min-height: var(--booking_form_items_height);
+  margin: var(--booking_form_items_margin);
+  border: max(0.25rem, 0.275vw) solid var(--primary);
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  font-size: var(--font_size);
+}/*# sourceMappingURL=Booking.css.map */

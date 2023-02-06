@@ -1,0 +1,65 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(173, 173, 173, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  --font_size: max(1rem, calc(1vw * 1.1));
+}
+.modal table {
+  width: max(25.5rem, 28.05vw);
+  border-collapse: collapse;
+  display: block;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+}
+.modal table thead {
+  display: none;
+}
+.modal table tbody {
+  display: block;
+}
+.modal table tbody tr {
+  display: block;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.modal table tbody tr td {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  --common_height: max(2rem, calc(2vh * 2.25));
+  height: var(--common_height);
+}
+.modal table tbody tr td::before {
+  content: attr(data-label);
+  position: absolute;
+  font-weight: 600;
+}
+.modal table tbody tr td button {
+  height: var(--common_height);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: white;
+  font-size: var(--font_size);
+}
+.modal button.cancelBooking {
+  margin: 1rem;
+  font-size: var(--font_size);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary);
+}
+.modal button {
+  cursor: pointer;
+}/*# sourceMappingURL=ConfirmBookingModal.css.map */

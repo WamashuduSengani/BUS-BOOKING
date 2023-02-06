@@ -1,0 +1,75 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #adadad33;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    --font_size: max(1rem, calc(1vw * 1.1));
+
+    table {
+        width: max(25.5rem, calc(25.5vw * 1.1));
+        border-collapse: collapse;
+        display: block;
+        background-color: rgb(243, 243, 243);
+        border-radius: 10px;
+
+        thead {
+            display: none;
+        }
+
+        tbody {
+            display: block;
+
+            tr {
+                display: block;
+                border: 2px solid black;
+                padding: 20px;
+                border-radius: 10px;
+
+                td {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: right;
+                    --common_height: max(2rem, calc(2vh * 2.25));
+                    height: var(--common_height);
+
+                    &::before {
+                        content: attr(data-label);
+                        position: absolute;
+                        font-weight: 600;
+                    }
+
+                    button {
+                        height: var(--common_height);
+                        background-color: var(--primary);
+                        border: 2px solid var(--primary);
+                        color: white;
+                        font-size: var(--font_size);
+                    }
+                }
+            }
+        }
+    }
+
+    button.cancelBooking {
+        margin: 1rem;
+        font-size: var(--font_size);
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--primary);
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+
+}

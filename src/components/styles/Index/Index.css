@@ -1,0 +1,19 @@
+* {
+  margin: 0%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --primary: dodgerblue;
+  --font_size: max(1rem, 1vw);
+  font-size: var(--font_size);
+  overflow-x: hidden;
+}
+:root #root {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #e9e8e8;
+  cursor: default;
+}/*# sourceMappingURL=Index.css.map */
